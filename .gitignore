@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+dist/
+build/
+
+# Local .pki certificates
+*.pki
+
+# Editor/IDE files
+.vscode/ # VS Code specific settings
+.idea/   # IntelliJ/WebStorm etc.
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
+
+# Other potential sensitive files (if applicable)
+*.pem
+*.key
