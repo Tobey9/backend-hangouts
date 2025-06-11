@@ -22,6 +22,6 @@ module.exports = {
     database: process.env.CLOUD_DATABASE_NAME,
     host: process.env.CLOUD_DATABASE_HOST,
     port: process.env.CLOUD_DATABASE_PORT || 3307,
-    dialect: "mysql",
+    dialect: "postgres",
   },
 };
