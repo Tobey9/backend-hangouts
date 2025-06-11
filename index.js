@@ -30,7 +30,7 @@ const followRoutes = require("./routes/Follow");
 app.use("/follow", followRoutes);
 
 sequelize
-  .sync({ force: true }) // Set force to true only for development/testing
+  .sync() // Set force to true only for development/testing
   .then(() => {
     console.log("Database synced");
     app.listen(PORT, () => {
