@@ -7,11 +7,13 @@ const { sequelize } = require("./models");
 const PORT = 3000;
 const cookieParser = require("cookie-parser");
 
+require("dotenv").config();
+
 app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", process.env.FRONTEND_URL],
     credentials: true,
   })
 );
