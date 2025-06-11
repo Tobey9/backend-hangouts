@@ -23,5 +23,12 @@ module.exports = {
     host: process.env.CLOUD_DATABASE_HOST,
     port: process.env.CLOUD_DATABASE_PORT,
     dialect: "postgres",
+    dialectOptions: {
+      // <--- THIS BLOCK IS CRUCIAL FOR SSL
+      ssl: {
+        require: true,
+        rejectUnauthorized: false, // Often needed for cloud DBs to avoid certificate errors
+      },
+    },
   },
 };
